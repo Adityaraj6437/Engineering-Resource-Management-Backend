@@ -10,7 +10,7 @@ export const userSchema = new mongoose.Schema(
 
     // Only for engineers
     skills: [{ type: String }],
-    seniority: { type: String, enum: ["junior", "mid", "senior"] },
+    seniority: { type: String },
     maxCapacity: { type: Number, default: 100 }, // 100 for full-time, 50 for part-time
     department: { type: String },
   },
